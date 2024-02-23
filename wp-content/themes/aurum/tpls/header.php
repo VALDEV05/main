@@ -2,8 +2,13 @@
     <?php get_template_part('tpls/header-top-bar'); ?>
     <div class="container">
         <div class="row">
-            <?php get_template_part('tpls/custom/header-logo'); ?>
-            <?php get_template_part('tpls/custom/header_links');?>
+            <div class="col-md-6">
+                <?php get_template_part('tpls/custom/header-logo'); ?>
+            </div>
+            <div class="col-md-6">
+
+                <?php get_template_part('tpls/custom/header_links'); ?>
+            </div>
         </div>
     </div>
 </header>
