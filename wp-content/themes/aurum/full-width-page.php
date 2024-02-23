@@ -17,7 +17,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 if (is_page(15)) {
 	get_header();
 	?>
-	<div class="page-container standalone-container">AA</div>
+	<div class="page-container standalone-container">
+
+		AAAA
+
+	</div>
 	<?php
 	
 }else{

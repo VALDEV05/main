@@ -266,15 +266,13 @@ body {
 header.site-header {
     .container {
         .row {
-            .col-sm-12 {
-                padding: 12px 0;
-                .header-menu {
-                    .container-logo_egho {
-                        a {
-                            img {
-                                max-width: 250px;
-                            }
-                        }
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .container-logo_egho {
+                a {
+                    img {
+                        max-width: 250px;
                     }
                 }
             }
