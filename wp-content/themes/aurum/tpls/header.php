@@ -13,7 +13,7 @@ $header_type        = $header_type ? $header_type : 1;
 $has_secondary_menu = $header_type && has_nav_menu( 'secondary-menu' );
 
 ?>
-<header class="site-header<?php echo " header-type-{$header_type}"; echo $header_sticky_menu ? " sticky": ''; ?>">
+<header class="site-header">
 
 	<?php get_template_part( 'tpls/header-top-bar' ); ?>
 
@@ -31,7 +31,7 @@ $has_secondary_menu = $header_type && has_nav_menu( 'secondary-menu' );
 						get_template_part( 'tpls/header-logo_custom' );
 						
 						if ( $header_type == 1 ) {
-							get_template_part( 'tpls/header-menu' );
+							get_template_part( 'tpls/header-menu_aa' );
 						}
 					?>
 
@@ -39,9 +39,9 @@ $has_secondary_menu = $header_type && has_nav_menu( 'secondary-menu' );
 					if ( in_array( $header_type, array( 1, 2, 3 ) ) ) :
 
 						if ( $header_type == 3 && $has_secondary_menu ) :
-							get_template_part( 'tpls/header-menu-secondary' );
+							get_template_part( 'tpls/header-menu-secondary_aaa' );
 						else :
-							get_template_part( 'tpls/header-links' );
+							get_template_part( 'tpls/header-links_aaa' );
 						endif;
 
 					endif;

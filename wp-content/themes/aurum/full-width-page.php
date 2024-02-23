@@ -13,12 +13,22 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Direct access not allowed.
 }
 
-get_header();
+/* HOME */
+if (is_page(15)) {
+	get_header();
+	?>
+	<div class="page-container standalone-container">AA</div>
+	<?php
+	
+}else{
 
-echo '<div class="page-container standalone-container">';
-
-the_content();
-
-echo '</div>';
-
-get_footer();
+	get_header();
+	
+	echo '<div class="page-container standalone-container">';
+	
+	the_content();
+	
+	echo '</div>';
+	
+	get_footer();
+}
